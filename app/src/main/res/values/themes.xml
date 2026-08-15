@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SpatialForge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/sf_background</item>
+        <item name="android:statusBarColor">@color/sf_background</item>
+        <item name="android:navigationBarColor">@color/sf_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="colorPrimary">@color/sf_accent</item>
+        <item name="colorAccent">@color/sf_accent</item>
+    </style>
+
+    <style name="SFToolButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginHorizontal">3dp</item>
+        <item name="android:background">@drawable/sf_button_bg</item>
+        <item name="android:textColor">@color/sf_text_primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="SFTopButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginHorizontal">3dp</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:paddingHorizontal">14dp</item>
+        <item name="android:background">@drawable/sf_button_bg</item>
+        <item name="android:textColor">@color/sf_text_primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+</resources>

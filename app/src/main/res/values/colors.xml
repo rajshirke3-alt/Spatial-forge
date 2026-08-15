@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sf_background">#0E1013</color>
+    <color name="sf_panel">#1A1D21</color>
+    <color name="sf_panel_stroke">#2A2E33</color>
+    <color name="sf_accent">#4FD1C5</color>
+    <color name="sf_accent_dim">#2E7D77</color>
+    <color name="sf_text_primary">#F2F3F5</color>
+    <color name="sf_text_secondary">#9AA0A6</color>
+    <color name="sf_tool_active">#4FD1C5</color>
+    <color name="sf_tool_inactive">#22262B</color>
+    <color name="sf_danger">#E5484D</color>
+</resources>

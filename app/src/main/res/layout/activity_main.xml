@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sf_background">
+
+    <!-- The real 3D viewport is inserted programmatically into this container -->
+    <FrameLayout
+        android:id="@+id/viewportContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top bar: project actions -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="12dp"
+        android:background="@drawable/sf_panel_bg"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/sf_text_secondary"
+            android:textSize="13sp" />
+
+        <Button android:id="@+id/btnUndo" style="@style/SFTopButton" android:text="@string/action_undo" />
+        <Button android:id="@+id/btnRedo" style="@style/SFTopButton" android:text="@string/action_redo" />
+        <Button android:id="@+id/btnSave" style="@style/SFTopButton" android:text="@string/action_save" />
+        <Button android:id="@+id/btnLoad" style="@style/SFTopButton" android:text="@string/action_load" />
+    </LinearLayout>
+
+    <!-- Performance indicator -->
+    <TextView
+        android:id="@+id/statsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sf_panel_bg"
+        android:padding="8dp"
+        android:textColor="@color/sf_text_secondary"
+        android:textSize="10sp"
+        android:fontFamily="monospace" />
+
+    <!-- Bottom bar: tools + primitives -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sf_panel_bg"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button android:id="@+id/btnAddCube" style="@style/SFToolButton" android:text="@string/add_cube" />
+            <Button android:id="@+id/btnAddSphere" style="@style/SFToolButton" android:text="@string/add_sphere" />
+            <Button android:id="@+id/btnAddCylinder" style="@style/SFToolButton" android:text="@string/add_cylinder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sf_panel_bg"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button android:id="@+id/btnToolNavigate" style="@style/SFToolButton" android:text="@string/tool_navigate" />
+            <Button android:id="@+id/btnToolMove" style="@style/SFToolButton" android:text="@string/tool_move" />
+            <Button android:id="@+id/btnToolRotate" style="@style/SFToolButton" android:text="@string/tool_rotate" />
+            <Button android:id="@+id/btnToolScale" style="@style/SFToolButton" android:text="@string/tool_scale" />
+            <Button android:id="@+id/btnToolDelete" style="@style/SFToolButton" android:text="@string/tool_delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

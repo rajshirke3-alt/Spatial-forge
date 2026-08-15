@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpatialForge</string>
+
+    <string name="tool_navigate">Orbit</string>
+    <string name="tool_move">Move</string>
+    <string name="tool_rotate">Rotate</string>
+    <string name="tool_scale">Scale</string>
+    <string name="tool_delete">Delete</string>
+
+    <string name="add_cube">Cube</string>
+    <string name="add_sphere">Sphere</string>
+    <string name="add_cylinder">Cylinder</string>
+
+    <string name="action_undo">Undo</string>
+    <string name="action_redo">Redo</string>
+    <string name="action_save">Save</string>
+    <string name="action_load">Load</string>
+
+    <string name="toast_saved">Project saved</string>
+    <string name="toast_loaded">Project loaded</string>
+    <string name="toast_no_save">No saved project found</string>
+    <string name="toast_select_first">Select an object first</string>
+</resources>
